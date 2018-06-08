@@ -29,7 +29,7 @@ steps = int(input("Input the number of steps between approximate value and the o
 dx= (xapprox-x)/steps
 dydx = float(eval(derivative))
 
-while x >= xapprox:
+while x <= xapprox:
     for i in range(1,steps+1):
         dydx = float(eval(derivative))
         dy= dydx*dx
